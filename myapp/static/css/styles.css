@@ -66,6 +66,7 @@ body {
 
 .auth-form .input-field,
 .auth-form input[type="text"],
+.auth-form input[type="email"],
 .auth-form input[type="password"],
 .profile-form input[type="text"],
 .profile-form input[type="file"],
