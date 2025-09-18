@@ -1,0 +1,193 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    margin: 0;
+    padding: 0;
+    color: #444;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 24px 28px;
+    padding-right: 48px;
+    border-radius: 12px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.07);
+    margin: 20px auto;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #222;
+}
+
+.auth-page {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-container {
+    max-width: 360px;
+    background: white;
+    padding: 40px 40px 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 60px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    text-align: center;
+    width: 90%;
+}
+
+.auth-title,
+.auth-container h2 {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 28px;
+    color: #222;
+    text-align: center;
+}
+
+.auth-form .input-field,
+.auth-form input[type="text"],
+.auth-form input[type="password"],
+.profile-form input[type="text"],
+.profile-form input[type="file"],
+.profile-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1.4px solid #d1d9e6;
+    background-color: #fafbfc;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.auth-form .input-field:focus,
+.auth-form input[type="text"]:focus,
+.auth-form input[type="password"]:focus,
+.profile-form input[type="text"]:focus,
+.profile-form textarea:focus,
+.profile-form input[type="file"]:focus {
+    outline: none;
+    border-color: #3a86ff;
+    box-shadow: 0 0 8px rgba(58, 134, 255, 0.4);
+    background-color: white;
+}
+
+.auth-switch,
+.back-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.auth-switch a,
+.back-link {
+    color: #3a86ff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.25s ease;
+}
+
+.auth-switch a:hover,
+.back-link:hover {
+    color: #274b8b;
+    text-decoration: underline;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #3a86ff;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(58, 134, 255, 0.3);
+    transition: background-color 0.25s ease, box-shadow 0.25s ease;
+    margin-top: 10px;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #2c6adf;
+    box-shadow: 0 6px 18px rgba(44, 106, 223, 0.5);
+    outline: none;
+}
+
+.btn.secondary {
+    background-color: #27ae60;
+    box-shadow: 0 6px 14px rgba(39, 174, 96, 0.4);
+}
+
+.btn.secondary:hover {
+    background-color: #1e8449;
+    box-shadow: 0 8px 20px rgba(30, 132, 73, 0.6);
+}
+
+.btn.danger {
+    background-color: #e74c3c;
+    box-shadow: 0 6px 14px rgba(231, 76, 60, 0.4);
+}
+
+.btn.danger:hover {
+    background-color: #c0392b;
+    box-shadow: 0 8px 20px rgba(192, 57, 43, 0.6);
+}
+
+.avatar-preview {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.avatar-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #3a86ff;
+    box-shadow: 0 3px 10px rgba(58, 134, 255, 0.35);
+    transition: box-shadow 0.3s ease;
+}
+
+.avatar-img:hover {
+    box-shadow: 0 6px 20px rgba(58, 134, 255, 0.6);
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.error {
+    color: #ff3860;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 14px;
+}

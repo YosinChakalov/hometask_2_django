@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Profile - {{ user.username }}</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body class="profile-page">
+    <div class="container">
+        <h2 class="section-title">Edit Profile</h2>
+
+        {% if profile.avatar %}
+            <div class="avatar-preview">
+                <img src="{{ profile.avatar.url }}" alt="Avatar" class="avatar-img">
+            </div>
+        {% endif %}
+
+        <form method="POST" enctype="multipart/form-data" class="profile-form">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn">Save Changes</button>
+        </form>
+
+        <p><a href="{% url 'profile' %}">← Back to Profile</a></p>
+    </div>
+</body>
+</html>
